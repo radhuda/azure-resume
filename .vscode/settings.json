@@ -1,0 +1,10 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3487d084-8b84-43da-91be-430dd9d35ecf/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/AzureResumeRad",
+    "appService.deploySubpath": "backend/api",
+    "azureFunctions.deploySubpath": "backend/api/bin/Release/netcoreapp3.1/publish",
+    "azureFunctions.projectLanguage": "C#",
+    "azureFunctions.projectRuntime": "~3",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "backend/api",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}
