@@ -4,14 +4,14 @@
     "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj": {}
   },
   "projects": {
-    "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj": {
+    "/Users/radhuda/Documents/Azure/Resume/backend/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj",
-        "projectName": "tests",
-        "projectPath": "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj",
+        "projectUniqueName": "/Users/radhuda/Documents/Azure/Resume/backend/api/api.csproj",
+        "projectName": "api",
+        "projectPath": "/Users/radhuda/Documents/Azure/Resume/backend/api/api.csproj",
         "packagesPath": "/Users/radhuda/.nuget/packages/",
-        "outputPath": "/Users/radhuda/Documents/Azure/Resume/backend/tests/obj/",
+        "outputPath": "/Users/radhuda/Documents/Azure/Resume/backend/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/radhuda/.nuget/NuGet/NuGet.Config"
@@ -36,6 +36,74 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.Azure.WebJobs.Extensions.CosmosDB": {
+              "target": "Package",
+              "version": "[3.0.10, )"
+            },
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[3.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.411/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj",
+        "projectName": "tests",
+        "projectPath": "/Users/radhuda/Documents/Azure/Resume/backend/tests/tests.csproj",
+        "packagesPath": "/Users/radhuda/.nuget/packages/",
+        "outputPath": "/Users/radhuda/Documents/Azure/Resume/backend/tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/radhuda/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/radhuda/Documents/Azure/Resume/backend/api/api.csproj": {
+                "projectPath": "/Users/radhuda/Documents/Azure/Resume/backend/api/api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
